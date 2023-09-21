@@ -85,7 +85,8 @@ resource "aws_ecs_service" "ecs_service" {
     security_groups  = [aws_security_group.app_server_security_group.id]
     assign_public_ip = false
   }
-
+}
+/*
   # load balancing
   load_balancer {
     target_group_arn = aws_lb_target_group.alb_target_group.arn
@@ -93,3 +94,4 @@ resource "aws_ecs_service" "ecs_service" {
     container_port   = 80
   }
 }
+*/

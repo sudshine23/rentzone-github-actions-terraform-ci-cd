@@ -31,7 +31,7 @@ resource "aws_lb_target_group" "alb_target_group" {
     unhealthy_threshold = 2
   }
 }
-
+/*
 # create a listener on port 80 with redirect action
 resource "aws_lb_listener" "alb_http_listener" {
   load_balancer_arn = aws_lb.application_load_balancer.arn
@@ -62,3 +62,4 @@ resource "aws_lb_listener" "alb_https_listener" {
     target_group_arn = aws_lb_target_group.alb_target_group.arn
   }
 }
+*/
